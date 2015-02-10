@@ -18,7 +18,8 @@
 
 //import scanner util
 import java.util.Scanner;
-
+import java.util.Formatter;
+import java.util.Locale;
 //define a class
 public class FourDigits{
     
@@ -34,18 +35,23 @@ public class FourDigits{
         int decimal;
         double userinput;
         
-        //get date
+        //get data
         System.out.println("Enter a double (xx.xxxx) and I display the four digits to the right of the decimal point");
         userinput = myscanner.nextDouble();
         
         //get fourdigit
-        userinput = (userinput*10000);
-        //delete decimal
-        decimal = (int)(userinput);
-        //get only four digit
+        decimal = (int)(userinput*10000);
+        //get only decimal
+        
         decimal = decimal%10000;
+        
+        //String fourdigit = String.format("%04d", decimal);
         //printout result
-        System.out.println("The four digits are " + decimal);
+        System.out.print("The Four digits are ");
+        //number to string 4 decimal point
+        String s = String.format("%04d", decimal);
+        //print out numbers
+        System.out.print(s);
         
     }//end of method
 }//end of class
