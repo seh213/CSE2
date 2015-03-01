@@ -10,17 +10,25 @@ public class HelloWorld{
     
     public static void main(String[] args){
         
-        //print the statment
-        
-        System.out.println("########################");
-        System.out.println("########################");
-        System.out.println("#                      #");
-        System.out.println("#  Hello World 2014!!  #");
-        System.out.println("#                      #");
-        System.out.println("########################");
-        System.out.println("########################");
-        System.out.println("testing");
-        
+        int k = 16;
+        int j = 4;
+switch (j){
+ case 1: 
+  System.out.print(1+""); 
+  k /= 2;
+case 2:
+  System.out.print(2+"");
+  k %= 5;
+case 3:
+  System.out.printf("3 ");
+  k -= 4;
+  break;   
+default:
+  System.out.printf("default ");
+  k *= 5;
+}
+System.out.printf("k = %2.2f\n", (double)k);
+
         
     }//end of method
 }//end of class
