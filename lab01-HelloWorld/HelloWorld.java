@@ -10,25 +10,7 @@ public class HelloWorld{
     
     public static void main(String[] args){
         
-        int k = 16;
-        int j = 4;
-switch (j){
- case 1: 
-  System.out.print(1+""); 
-  k /= 2;
-case 2:
-  System.out.print(2+"");
-  k %= 5;
-case 3:
-  System.out.printf("3 ");
-  k -= 4;
-  break;   
-default:
-  System.out.printf("default ");
-  k *= 5;
-}
-System.out.printf("k = %2.2f\n", (double)k);
-
+        System.out.println(5*2 == 45 != 23 > 63 == true);
         
     }//end of method
 }//end of class
