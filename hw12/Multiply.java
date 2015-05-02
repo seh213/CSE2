@@ -5,17 +5,6 @@
 
 // implement matrix multiplication on random matrices.  
 
-//Next, scramble the sorted array randomly, and print out the scrambled array.
-//Prompt the user again to enter an int to be searched for, and use linear search to find the grade.
-//Indicate if the grade was found or not, and how many iterations it took. 
-
-//Write separate methods for linear search, binary search and random scrambling. 
-//It might also help to write a print method to track the progress of your array. 
-//Import and use java.util.Random for the random scrambling method. 
-//Treat it like sorting, using a random number for the index.
-
-
-
 
 import java.util.Random;
 import java.util.Scanner;

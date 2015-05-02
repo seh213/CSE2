@@ -13,8 +13,7 @@ public class ArrayInputs {
         int a=0;
         int newinput;
         
-        int[] myIntArray = new int[0];
-        
+
         
         do 
         {
@@ -27,17 +26,33 @@ public class ArrayInputs {
             input = myscanner.nextInt();
         } while (input < 0);
         
+        int[] A = new int[input];
         
-        System.out.println("Please enter " + input + " positive integer: ");
-        newinput = myscanner.nextInt();
+
         
-        myIntArray = new int[input];
         
-        while(a <= newinput)
+        for (int i = 0; i < input; i++)
         {
-            myIntArray[a] = newinput;
-            a++;
-            System.out.print(myIntArray[a]);
+            do 
+            {
+                System.out.println("Please enter " + input + " positive integer: ");
+                while (!myscanner.hasNextInt()) 
+                {
+                    System.out.println("Only Integer is accepted");
+                    myscanner.next(); 
+                }
+            newinput = myscanner.nextInt();
+            } while (newinput < 0);
+            
+            A[i] = newinput;
         }
+        
+        System.out.println("The array is: ");
+        System.out.print("[ ");
+        for(int i = 0; i < input; i++) {
+            System.out.print(A[i] + " ");
+        }
+        System.out.println("]");
+        System.out.println();
     }
 }
